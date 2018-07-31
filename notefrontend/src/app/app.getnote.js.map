@@ -1,0 +1,1 @@
+{"version":3,"file":"app.getnote.js","sourceRoot":"","sources":["app.getnote.ts"],"names":[],"mappings":";;;;;;;AAAA,sCAA0C;AAM1C,IAAa,UAAU;IAJvB;QAI2B,SAAI,GAAG,SAAS,CAAC;IAAC,CAAC;IAAD,iBAAC;AAAD,CAAC,AAA9C,IAA8C;AAAjC,UAAU;IAJtB,gBAAS,CAAC;QACT,QAAQ,EAAE,SAAS;QACnB,QAAQ,EAAE,8DAA8D;KACzE,CAAC;GACW,UAAU,CAAuB;AAAjC,gCAAU"}

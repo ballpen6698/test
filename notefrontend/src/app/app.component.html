@@ -1,0 +1,36 @@
+<div class="container">
+    <h1>View All Notes:</h1>
+
+     <!--/if note.id is null and notes is poplulated, then note is an array since no id attribute for note but object stored in array note has id attribute/-->
+    <div *ngIf=" notes != null && notes.note.id == null">
+        <div *ngFor='let lst of notes.note'>
+            <ul>
+                <li>id:{{lst.id}}</li>
+                <li>title:{{lst.title}}</li>
+                <li>content:{{lst.content}}</li>
+            </ul>
+        </div>
+    </div>
+
+     <!--/if note.id is not null and notes is poplulated, then note has id attribute/-->
+    <div *ngIf=" notes != null && notes.note.id != null">
+        <ul>
+            <li>id:{{notes.note.id}}</li>
+            <li>title:{{notes.note.title}}</li>
+            <li>content:{{notes.note.content}}</li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Add Note:</h1>
+    <div>
+
+        Title:
+        <input [(ngModel)]="title" value="{{title}}" required>
+        <br/> Content:
+        <textarea [(ngModel)]="content" required>{{content}}</textarea>
+        <button (click)="postNote(title, content)">Add Note</button>
+    </div>
+
+</div>
