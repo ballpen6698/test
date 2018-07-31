@@ -3,8 +3,9 @@ Backend server Tomcat 7 : here is link to get server https://tomcat.apache.org/d
 how to build and run backend
  1. clean the project, and do maven clean install to get all required lib
  2. configure project -> deployment assembly -> add java build entries -> add maven lib to project
- 3. make sure use tomcat 7 and add filter to tomcat web.xml
- 4. deploy to tomcat 7 server
+ 3. export the project as .war file to tomcat 7 server under webapp folder
+ 3. add filter to tomcat web.xml (filter configuration is provided below)
+ 4. start tomcat server
 
  Or
  used the note.war that I have complied and deployed to tomcat 7 and also please add following filter to tomcat web.xml 
